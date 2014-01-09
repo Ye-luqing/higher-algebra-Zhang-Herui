@@ -1,0 +1,106 @@
+\documentclass[twoside,11pt]{article} 
+\usepackage{amsmath,amsfonts,bm}
+\usepackage{hyperref}
+\usepackage{amsthm} 
+\usepackage{amssymb}
+\usepackage{framed,mdframed}
+\usepackage{graphicx,color} 
+\usepackage{mathrsfs,xcolor} 
+\usepackage[all]{xy}
+\usepackage{fancybox} 
+% \usepackage{CJKutf8}
+\usepackage{xeCJK}
+\newtheorem{theorem}{定理}
+\newtheorem{lemma}{引理}
+\newtheorem{corollary}{推论}
+\newtheorem*{exercise}{习题}
+\newtheorem*{example}{例}
+\setCJKmainfont[BoldFont=Adobe Heiti Std R]{Adobe Song Std L}
+% \usepackage{latexdef}
+\def\ZZ{\mathbb{Z}} \topmargin -0.40in \oddsidemargin 0.08in
+\evensidemargin 0.08in \marginparwidth 0.00in \marginparsep 0.00in
+\textwidth 16cm \textheight 24cm \newcommand{\D}{\displaystyle}
+\newcommand{\ds}{\displaystyle} \renewcommand{\ni}{\noindent}
+\newcommand{\pa}{\partial} \newcommand{\Om}{\Omega}
+\newcommand{\om}{\omega} \newcommand{\sik}{\sum_{i=1}^k}
+\newcommand{\vov}{\Vert\omega\Vert} \newcommand{\Umy}{U_{\mu_i,y^i}}
+\newcommand{\lamns}{\lambda_n^{^{\scriptstyle\sigma}}}
+\newcommand{\chiomn}{\chi_{_{\Omega_n}}}
+\newcommand{\ullim}{\underline{\lim}} \newcommand{\bsy}{\boldsymbol}
+\newcommand{\mvb}{\mathversion{bold}} \newcommand{\la}{\lambda}
+\newcommand{\La}{\Lambda} \newcommand{\va}{\varepsilon}
+\newcommand{\be}{\beta} \newcommand{\al}{\alpha}
+\newcommand{\dis}{\displaystyle} \newcommand{\R}{{\mathbb R}}
+\newcommand{\N}{{\mathbb N}} \newcommand{\cF}{{\mathcal F}}
+\newcommand{\gB}{{\mathfrak B}} \newcommand{\eps}{\epsilon}
+\renewcommand\refname{参考文献} \def \qed {\hfill \vrule height6pt
+  width 6pt depth 0pt} \topmargin -0.40in \oddsidemargin 0.08in
+\evensidemargin 0.08in \marginparwidth0.00in \marginparsep 0.00in
+\textwidth 15.5cm \textheight 24cm \pagestyle{myheadings}
+\markboth{\rm \centerline{}} {\rm \centerline{}}
+\begin{document}
+\title{\huge{\bf{习题2.2.6}}} \author{\small{叶卢
+    庆\footnote{叶卢庆(1992---),男,杭州师范大学理学院数学与应用数学专业
+      本科在读,E-mail:h5411167@gmail.com}}\\{\small{杭州师范大学理学院,浙
+      江~杭州~310036}}} \date{}
+\maketitle
+
+% ----------------------------------------------------------------------------------------
+% ABSTRACT AND KEYWORDS
+% ----------------------------------------------------------------------------------------
+
+
+
+
+\vspace{30pt} % Some vertical space between the abstract and first section
+\begin{exercise}[2.2.6]
+考虑有理数域上多项式
+$$
+f_{n,k}(x)=(x+1)^{k+n}+(2x)(x+1)^{k+n-1}+\cdots+(2x)^k(x+1)^n,
+$$
+这里 $k,n$ 都是非负整数.证明
+$$
+x^{k+1}|(x-1)f_{n,k}(x)+(x+1)^{k+n+1}.
+$$
+\end{exercise}
+\begin{proof}[\textbf{证明}]
+采用数学归纳法.当 $k=0$ 时,我们先证明
+$$
+x|(x-1) (x+1)^n+(x+1)^{n+1}.
+$$
+也就是证明
+$$
+x|(x+1)^n(x-1+x+1).
+$$
+成立.假设 $k=p$ 的时候,命题成立.
+则 $k=p+1$ 时,我们来看
+\begin{align*}
+  (x+1)^{p+1+n}+(2x)(x+1)^{p+n}+\cdots+(2x)^{p+1}(x+1)^n&=(x+1)^{p+1+n}+2xf_{n,p}(x)
+\end{align*}
+因此,
+\begin{align*}
+  (x-1)f_{n,p+1}(x)+(x+1)^{p+n+2}&=(x-1)(x+1)^{p+n+1}+2x(x-1)f_{n,p}(x)+(x+1)^{p+n+2}\\&=2x((x+1)^{p+n+1}+(x-1)f_{n,p}(x)).
+\end{align*}
+结合假设,可得
+$$
+x^{p+2}|2x((x+1)^{p+n+1}+(x-1)f_{n,p}(x)).
+$$
+因此根据数学归纳法,命题成立.
+\end{proof}
+% ----------------------------------------------------------------------------------------
+% ESSAY BODY
+% ----------------------------------------------------------------------------------------
+
+% BIBLIOGRAPHY
+% ----------------------------------------------------------------------------------------
+% 
+% ----------------------------------------------------------------------------------------
+\end{document}
+
+
+
+
+
+
+
+
