@@ -1,0 +1,99 @@
+\documentclass[twoside,11pt]{article} 
+\usepackage{amsmath,amsfonts,bm}
+\usepackage{hyperref}
+\usepackage{amsthm} 
+\usepackage{amssymb}
+\usepackage{framed,mdframed}
+\usepackage{graphicx,color} 
+\usepackage{mathrsfs,xcolor} 
+\usepackage[all]{xy}
+\usepackage{fancybox} 
+% \usepackage{CJKutf8}
+\usepackage{xeCJK}
+\newtheorem{theorem}{定理}
+\newtheorem{lemma}{引理}
+\newtheorem{remark}{注}
+\newtheorem{corollary}{推论}
+\newtheorem*{exercise}{习题}
+\newtheorem*{example}{例}
+\setCJKmainfont[BoldFont=Adobe Heiti Std R]{Adobe Song Std L}
+% \usepackage{latexdef}
+\def\ZZ{\mathbb{Z}} \topmargin -0.40in \oddsidemargin 0.08in
+\evensidemargin 0.08in \marginparwidth 0.00in \marginparsep 0.00in
+\textwidth 16cm \textheight 24cm \newcommand{\D}{\displaystyle}
+\newcommand{\ds}{\displaystyle} \renewcommand{\ni}{\noindent}
+\newcommand{\pa}{\partial} \newcommand{\Om}{\Omega}
+\newcommand{\om}{\omega} \newcommand{\sik}{\sum_{i=1}^k}
+\newcommand{\vov}{\Vert\omega\Vert} \newcommand{\Umy}{U_{\mu_i,y^i}}
+\newcommand{\lamns}{\lambda_n^{^{\scriptstyle\sigma}}}
+\newcommand{\chiomn}{\chi_{_{\Omega_n}}}
+\newcommand{\ullim}{\underline{\lim}} \newcommand{\bsy}{\boldsymbol}
+\newcommand{\mvb}{\mathversion{bold}} \newcommand{\la}{\lambda}
+\newcommand{\La}{\Lambda} \newcommand{\va}{\varepsilon}
+\newcommand{\be}{\beta} \newcommand{\al}{\alpha}
+\newcommand{\dis}{\displaystyle} \newcommand{\R}{{\mathbb R}}
+\newcommand{\N}{{\mathbb N}} \newcommand{\cF}{{\mathcal F}}
+\newcommand{\gB}{{\mathfrak B}} \newcommand{\eps}{\epsilon}
+\renewcommand\refname{参考文献} \def \qed {\hfill \vrule height6pt
+  width 6pt depth 0pt} \topmargin -0.40in \oddsidemargin 0.08in
+\evensidemargin 0.08in \marginparwidth0.00in \marginparsep 0.00in
+\textwidth 15.5cm \textheight 24cm \pagestyle{myheadings}
+\markboth{\rm \centerline{}} {\rm \centerline{}}
+\begin{document}
+\title{\huge{\bf{习题2.2.7}}} \author{\small{叶卢
+    庆\footnote{叶卢庆(1992---),男,杭州师范大学理学院数学与应用数学专业
+      本科在读,E-mail:h5411167@gmail.com}}\\{\small{杭州师范大学理学院,浙
+      江~杭州~310036}}} \date{}
+\maketitle
+
+% ----------------------------------------------------------------------------------------
+% ABSTRACT AND KEYWORDS
+% ----------------------------------------------------------------------------------------
+
+
+\vspace{30pt} % Some vertical space between the abstract and first section
+
+% ----------------------------------------------------------------------------------------
+% ESSAY BODY
+% ----------------------------------------------------------------------------------------
+\begin{exercise}[2.2.7]
+  证明 $x^d-1$ 整除 $x^n-1$ 当且仅当 $d$ 整除 $n$.
+\end{exercise}
+\begin{proof}[\textbf{证明}]
+$\Leftarrow:$此时,不妨设 $n=kd$,此时,易得
+$$
+x^n-1=(x^{d})^k-1^k=(x^d-1)\Delta.
+$$
+其中 $\Delta $ 是一个多项式.因此 $x^d-1|x^n-1$.\\
+
+$\Rightarrow:$ $x^d-1|x^n-1$ 说明 $n\geq d$.假若 $d\not|n$,则根据带余
+除法,存在唯一的 $q,r$,使得
+$$
+n=qd+r,
+$$
+其中 $0< r<d$.则
+$$
+x^n-1=x^{qd+r}-1.
+$$
+而
+$$
+x^{qd+r}-1=x^{qd}x^r-x^r+x^r-1=x^r(x^{qd}-1)+(x^r-1)=(x^d-1)x^r\Delta'+(x^r-1).
+$$
+易得 $x^d-1\not|x^r-1$,因此,$x^d-1\not |x^n-1$,矛盾.因此 $d|n$.
+\end{proof}
+\begin{remark}
+  这个结论建立了 $d|n$ 和 $x^d-1|x^n-1$ 的对应关系,个人认为会有大用.
+\end{remark}
+% BIBLIOGRAPHY
+% ----------------------------------------------------------------------------------------
+% 
+% ----------------------------------------------------------------------------------------
+\end{document}
+
+
+
+
+
+
+
+
