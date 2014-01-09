@@ -1,0 +1,87 @@
+\documentclass[twoside,11pt]{article} 
+\usepackage{amsmath,amsfonts,bm}
+\usepackage{hyperref}
+\usepackage{amsthm} 
+\usepackage{amssymb}
+\usepackage{framed,mdframed}
+\usepackage{graphicx,color} 
+\usepackage{mathrsfs,xcolor} 
+\usepackage[all]{xy}
+\usepackage{fancybox} 
+% \usepackage{CJKutf8}
+\usepackage{xeCJK}
+\newtheorem{theorem}{定理}
+\newtheorem{lemma}{引理}
+\newtheorem*{exercise}{习题}
+\newtheorem{corollary}{推论}
+\setCJKmainfont[BoldFont=Adobe Heiti Std R]{Adobe Song Std L}
+% \usepackage{latexdef}
+\def\ZZ{\mathbb{Z}} \topmargin -0.40in \oddsidemargin 0.08in
+\evensidemargin 0.08in \marginparwidth 0.00in \marginparsep 0.00in
+\textwidth 16cm \textheight 24cm \newcommand{\D}{\displaystyle}
+\newcommand{\ds}{\displaystyle} \renewcommand{\ni}{\noindent}
+\newcommand{\pa}{\partial} \newcommand{\Om}{\Omega}
+\newcommand{\om}{\omega} \newcommand{\sik}{\sum_{i=1}^k}
+\newcommand{\vov}{\Vert\omega\Vert} \newcommand{\Umy}{U_{\mu_i,y^i}}
+\newcommand{\lamns}{\lambda_n^{^{\scriptstyle\sigma}}}
+\newcommand{\chiomn}{\chi_{_{\Omega_n}}}
+\newcommand{\ullim}{\underline{\lim}} \newcommand{\bsy}{\boldsymbol}
+\newcommand{\mvb}{\mathversion{bold}} \newcommand{\la}{\lambda}
+\newcommand{\La}{\Lambda} \newcommand{\va}{\varepsilon}
+\newcommand{\be}{\beta} \newcommand{\al}{\alpha}
+\newcommand{\dis}{\displaystyle} \newcommand{\R}{{\mathbb R}}
+\newcommand{\N}{{\mathbb N}} \newcommand{\cF}{{\mathcal F}}
+\newcommand{\gB}{{\mathfrak B}} \newcommand{\eps}{\epsilon}
+\renewcommand\refname{参考文献} \def \qed {\hfill \vrule height6pt
+  width 6pt depth 0pt} \topmargin -0.40in \oddsidemargin 0.08in
+\evensidemargin 0.08in \marginparwidth0.00in \marginparsep 0.00in
+\textwidth 15.5cm \textheight 24cm \pagestyle{myheadings}
+\markboth{\rm \centerline{}} {\rm \centerline{}}
+\begin{document}
+\title{\huge{\bf{习题2.2.2}}} \author{\small{叶卢
+    庆\footnote{叶卢庆(1992---),男,杭州师范大学理学院数学与应用数学专业
+      本科在读,E-mail:h5411167@gmail.com}}\\{\small{杭州师范大学理学院,浙
+      江~杭州~310036}}} \date{}
+\maketitle
+
+% ----------------------------------------------------------------------------------------
+% ABSTRACT AND KEYWORDS
+% ----------------------------------------------------------------------------------------
+
+
+
+
+\vspace{30pt} % Some vertical space between the abstract and first section
+
+% ----------------------------------------------------------------------------------------
+% ESSAY BODY
+% ----------------------------------------------------------------------------------------
+\begin{exercise}[2.2.2]
+证明 $x|f(x)^k$ 当且仅当 $x|f(x)$.  
+\end{exercise}
+\begin{proof}[\textbf{证明}]
+按照题目的意思,显然是 $k>1$.而且由于当 $f(x)\equiv 0$ 的情形是简单的,
+我们也不予讨论. \\\\
+  $\Leftarrow:$当 $x|f(x)$ 时,表明 $f(x)=g(x)x$,其中 $g(x)$ 是一个多项
+  式.因此 $f(x)^k=g(x)^kx^k=(g(x)^kx^{k-1})x$,因此 $x|f(x)^k$.\\
+$\Rightarrow$:当 $x|f(x)^k$,说明 $f(x)$ 不是零多项式,且由于证明中的第
+一句话,$f(x)$ 也不是0.假设 $x\not |f(x)$,则根据带余除法,存在唯一的 $p(x),r(x)$,使得
+$$
+f(x)=p(x)x+r(x),
+$$
+其中 $r(x)$ 是个零多项式.下面我们来看
+$$
+f(x)^k=(p(x)x+r(x))^k,
+$$
+易得该多项式的常数项必为 $r(x)^k$,因此 $x\not |f(x)^k$,矛盾.因此我们有 $x|f(x)$.
+\end{proof}
+% ----------------------------------------------------------------------------------------
+\end{document}
+
+
+
+
+
+
+
+
