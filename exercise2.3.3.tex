@@ -1,0 +1,126 @@
+\documentclass[twoside,11pt]{article} 
+\usepackage{amsmath,amsfonts,bm}
+\usepackage{hyperref}
+\usepackage{amsthm} 
+\usepackage{amssymb}
+\usepackage{framed,mdframed}
+\usepackage{graphicx,color} 
+\usepackage{mathrsfs,xcolor} 
+\usepackage[all]{xy}
+\usepackage{fancybox} 
+% \usepackage{CJKutf8}
+\usepackage{xeCJK}
+\newtheorem{theorem}{定理}
+\newtheorem{lemma}{引理}
+\newtheorem{corollary}{推论}
+\newtheorem*{exercise}{习题}
+\newtheorem*{example}{例}
+\newtheorem{remark}{注}
+\setCJKmainfont[BoldFont=Adobe Heiti Std R]{Adobe Song Std L}
+% \usepackage{latexdef}
+\def\ZZ{\mathbb{Z}} \topmargin -0.40in \oddsidemargin 0.08in
+\evensidemargin 0.08in \marginparwidth 0.00in \marginparsep 0.00in
+\textwidth 16cm \textheight 24cm \newcommand{\D}{\displaystyle}
+\newcommand{\ds}{\displaystyle} \renewcommand{\ni}{\noindent}
+\newcommand{\pa}{\partial} \newcommand{\Om}{\Omega}
+\newcommand{\om}{\omega} \newcommand{\sik}{\sum_{i=1}^k}
+\newcommand{\vov}{\Vert\omega\Vert} \newcommand{\Umy}{U_{\mu_i,y^i}}
+\newcommand{\lamns}{\lambda_n^{^{\scriptstyle\sigma}}}
+\newcommand{\chiomn}{\chi_{_{\Omega_n}}}
+\newcommand{\ullim}{\underline{\lim}} \newcommand{\bsy}{\boldsymbol}
+\newcommand{\mvb}{\mathversion{bold}} \newcommand{\la}{\lambda}
+\newcommand{\La}{\Lambda} \newcommand{\va}{\varepsilon}
+\newcommand{\be}{\beta} \newcommand{\al}{\alpha}
+\newcommand{\dis}{\displaystyle} \newcommand{\R}{{\mathbb R}}
+\newcommand{\N}{{\mathbb N}} \newcommand{\cF}{{\mathcal F}}
+\newcommand{\gB}{{\mathfrak B}} \newcommand{\eps}{\epsilon}
+\renewcommand\refname{参考文献} \def \qed {\hfill \vrule height6pt
+  width 6pt depth 0pt} \topmargin -0.40in \oddsidemargin 0.08in
+\evensidemargin 0.08in \marginparwidth0.00in \marginparsep 0.00in
+\textwidth 15.5cm \textheight 24cm \pagestyle{myheadings}
+\markboth{\rm \centerline{}} {\rm \centerline{}}
+\begin{document}
+\title{\huge{\bf{习题2.3.3}}} \author{\small{叶卢
+    庆\footnote{叶卢庆(1992---),男,杭州师范大学理学院数学与应用数学专业
+      本科在读,E-mail:h5411167@gmail.com}}\\{\small{杭州师范大学理学院,浙
+      江~杭州~310036}}} \date{}
+\maketitle
+
+% ----------------------------------------------------------------------------------------
+% ABSTRACT AND KEYWORDS
+% ----------------------------------------------------------------------------------------
+
+
+
+
+
+\vspace{30pt} % Some vertical space between the abstract and first section
+\begin{exercise}[2.3.3]
+令 $f(x),g(x)$ 是 $\mathbf{F}(x)$ 的多项式,而 $a,b,c,d$ 是
+$\mathbf{F}$ 中的数,并且
+$$
+\begin{vmatrix}
+  a&b\\
+c&d\\
+\end{vmatrix}\neq 0,
+$$
+证明,
+$$
+(af(x)+bg(x),cf(x)+dg(x))=(f(x),g(x))
+$$  
+\end{exercise}
+\begin{remark}
+  我们先来看与之对应的数论中的相应结论.$a,b,c,d$ 仍然满足题设条件,但是
+  $p,q\in \mathbf{Z}$,我们来证明
+$$
+(ap+bq,cp+dq)=(p,q).
+$$
+很可惜这个命题是不成立的.比如,$(1,1)=1$,但是 $(1+2,3+9)=3$.由以下论证
+可以看出,对于数论中的对应结论,我们必须要求 $ad-bc=\pm 1$.
+\end{remark}
+\begin{proof}[\bf{证明}]
+令 
+$$
+\begin{cases}
+  af(x)+bg(x)=p(x),\\
+cf(x)+dg(x)=q(x).
+\end{cases}
+$$
+由于行列式不为0,因此可得
+$$
+\begin{cases}
+  f(x)=\frac{\begin{vmatrix}
+      p(x)&b\\
+q(x)&d
+    \end{vmatrix}}{\begin{vmatrix}
+      a&b\\
+c&d
+    \end{vmatrix}},\\
+g(x)=\frac{\begin{vmatrix}
+    a&p(x)\\
+c&q(x)
+  \end{vmatrix}}{\begin{vmatrix}
+    a&b\\
+c&d
+  \end{vmatrix}}.
+\end{cases}
+$$
+这样子,就易得命题成立(为什么?).
+\end{proof}
+% ----------------------------------------------------------------------------------------
+% ESSAY BODY
+% ----------------------------------------------------------------------------------------
+
+% BIBLIOGRAPHY
+% ----------------------------------------------------------------------------------------
+% 
+% ----------------------------------------------------------------------------------------
+\end{document}
+
+
+
+
+
+
+
+
