@@ -1,0 +1,85 @@
+\documentclass[twoside,11pt]{article} 
+\usepackage{amsmath,amsfonts,bm}
+\usepackage{hyperref}
+\usepackage{amsthm} 
+\usepackage{amssymb}
+\usepackage{framed,mdframed}
+\usepackage{graphicx,color} 
+\usepackage{mathrsfs,xcolor} 
+\usepackage[all]{xy}
+\usepackage{fancybox} 
+% \usepackage{CJKutf8}
+\usepackage{xeCJK}
+\newtheorem{theorem}{定理}
+\newtheorem{lemma}{引理}
+\newtheorem{corollary}{推论}
+\newtheorem*{exercise}{习题}
+\newtheorem*{example}{例}
+\setCJKmainfont[BoldFont=Adobe Heiti Std R]{Adobe Song Std L}
+% \usepackage{latexdef}
+\def\ZZ{\mathbb{Z}} \topmargin -0.40in \oddsidemargin 0.08in
+\evensidemargin 0.08in \marginparwidth 0.00in \marginparsep 0.00in
+\textwidth 16cm \textheight 24cm \newcommand{\D}{\displaystyle}
+\newcommand{\ds}{\displaystyle} \renewcommand{\ni}{\noindent}
+\newcommand{\pa}{\partial} \newcommand{\Om}{\Omega}
+\newcommand{\om}{\omega} \newcommand{\sik}{\sum_{i=1}^k}
+\newcommand{\vov}{\Vert\omega\Vert} \newcommand{\Umy}{U_{\mu_i,y^i}}
+\newcommand{\lamns}{\lambda_n^{^{\scriptstyle\sigma}}}
+\newcommand{\chiomn}{\chi_{_{\Omega_n}}}
+\newcommand{\ullim}{\underline{\lim}} \newcommand{\bsy}{\boldsymbol}
+\newcommand{\mvb}{\mathversion{bold}} \newcommand{\la}{\lambda}
+\newcommand{\La}{\Lambda} \newcommand{\va}{\varepsilon}
+\newcommand{\be}{\beta} \newcommand{\al}{\alpha}
+\newcommand{\dis}{\displaystyle} \newcommand{\R}{{\mathbb R}}
+\newcommand{\N}{{\mathbb N}} \newcommand{\cF}{{\mathcal F}}
+\newcommand{\gB}{{\mathfrak B}} \newcommand{\eps}{\epsilon}
+\renewcommand\refname{参考文献} \def \qed {\hfill \vrule height6pt
+  width 6pt depth 0pt} \topmargin -0.40in \oddsidemargin 0.08in
+\evensidemargin 0.08in \marginparwidth0.00in \marginparsep 0.00in
+\textwidth 15.5cm \textheight 24cm \pagestyle{myheadings}
+\markboth{\rm \centerline{}} {\rm \centerline{}}
+\begin{document}
+\title{\huge{\bf{推论2.3.3.2}}} \author{\small{叶卢
+    庆\footnote{叶卢庆(1992---),男,杭州师范大学理学院数学与应用数学专业
+      本科在读,E-mail:h5411167@gmail.com}}\\{\small{杭州师范大学理学院,浙
+      江~杭州~310036}}} \date{}
+\maketitle
+
+% ----------------------------------------------------------------------------------------
+% ABSTRACT AND KEYWORDS
+% ----------------------------------------------------------------------------------------
+
+
+
+
+
+\vspace{30pt} % Some vertical space between the abstract and first section
+
+% ----------------------------------------------------------------------------------------
+% ESSAY BODY
+% ----------------------------------------------------------------------------------------
+\begin{theorem}
+  若多项式 $h(x)$ 整除多项式 $f(x)g(x)$,而 $h(x)$ 与 $f(x)$ 互素,那么
+  $h(x)$ 一定整除 $g(x)$. 
+\end{theorem}
+\begin{proof}[\textbf{证明}]
+  由于 $h(x)$ 与 $f(x)$ 互素,因此存在 $u(x),v(x)$,使得
+$$
+u(x)h(x)+v(x)f(x)=1.
+$$
+两边同时乘以 $g(x)$,可得
+$$
+g(x)u(x)h(x)+v(x)g(x)f(x)=g(x).
+$$
+由于 $h(x)|g(x)f(x)$,因此由上式可得 $h(x)|g(x)$.
+\end{proof}
+% ----------------------------------------------------------------------------------------
+\end{document}
+
+
+
+
+
+
+
+
